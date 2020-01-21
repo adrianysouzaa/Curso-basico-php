@@ -10,6 +10,9 @@
 </head>
 <body>
 <div class="container" style="margin-top: 40px">
+      <div style="text-align: right">
+          <a href="index.php" role="button" class="btn  btn-sm btn-primary">Voltar</a>
+  </div>
 <h3>Lista de Produtos</h3>
 <br>
 	
@@ -47,9 +50,12 @@
 
     	<td> <?php echo $quantidade?> </td>
 
-    	<td> <?php echo $fornecedor ?> </td>
-      
-    	<td><a class="btn btn-warning btn-sm" style="color:#fff" href="editar_produto.php?id=<?php echo $id_estoque ?>" role="button"><i class="far fa-edit"></i>&nbsp;Editar</a></td>
+    	
+      <td> <?php echo $fornecedor ?> </td>
+      <td><a class="btn btn-warning btn-sm" style="color:#fff" href="editar_produto.php?id=<?php echo $id_estoque ?>" role="button"><i class="far fa-edit"></i>&nbsp;Editar</a>
+
+        <a class="btn btn-danger btn-sm" style="color:#fff" href="deletar_produto.php?id=<?php echo $id_estoque ?>" role="button"><i class="far fa-trash-alt"></i>&nbsp;Excluir</a>
+      </td>
 
 
 
