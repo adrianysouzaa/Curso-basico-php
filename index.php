@@ -9,12 +9,13 @@
 
 <div class="container" style="margin-top: 100px">
 	<div class="row">
+
   <div class="col-sm-6">
     <div class="card">
       <div class="card-body">
         <h5 class="card-title">Adicionar Produto</h5>
         <p class="card-text">Opção para adicionar produtos em nosso estoque.</p>
-        <a href="adicionar_produto.php" class="btn btn-primary">Cadastrar Produto</a>
+        <a href="adicionar_produto.php" class="btn btn-primary">Cadastrar produto</a>
       </div>
     </div>
   </div>
@@ -27,6 +28,28 @@
       </div>
     </div>
   </div>
+
+   <div class="col-sm-6" style="margin-top: 20px">
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title">Adicionar Categoria</h5>
+        <p class="card-text">Opção para adicionar categoria de produtos.</p>
+        <a href="adicionar_categoria.php" class="btn btn-primary">Cadastrar categoria</a>
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-6" style="margin-top: 20px">
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title">Adicionar fornecedor</h5>
+        <p class="card-text">Opção para adicionar fornecedores.</p>
+        <a href="#" class="btn btn-primary">Cadastrar fornecedores</a>
+      </div>
+    </div>
+  </div>
+  
+</div>
+
 </div>
 
 <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
