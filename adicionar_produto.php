@@ -41,8 +41,7 @@
     		<input type="text" class="form-control" name="nomeproduto"placeholder="Insira o nome do produto" required="">
     		
   			</div>
-
-  			 <div class="form-group">
+        <div class="form-group">
     		      <label>Categoria do Produto</label>
     		      <select class="form-control" name="categoria">
 
@@ -64,20 +63,26 @@
                       <?php } ?>
            
             </select>
-         </div>
-
+      </div>
   		<div class="form-group">
     		<label>Quantidade</label>
     		<input type="number" class="form-control"name="quantidade" placeholder="Insira a quantidade do produto" required="">
     		
   		</div>
-
   		<div class="form-group">
     		<label>Fornecedor</label>
     		<select class="form-control" name="fornecedor">
-     		 <option>Fornecedor A</option>
-      		 <option>Fornecedor B</option>
-      		 <option>Fornecedor C</option>
+        <?php 
+        include 'conexao.php';
+        $sql2= "SELECT * FROM fornecedor";
+        $buscar2= mysqli_query($conexao, $sql2);
+
+        while ($array2 = mysqli_fetch_array($buscar2)){
+            $id_fornecedor = $array2['id_forn'];
+            $nome_fornecedor= $array2['nome_forn'];
+        ?>
+      		    <option><?php echo $nome_fornecedor ?></option>
+              <?php } ?>
             </select>
          </div>
          <div style="text-align: right;">

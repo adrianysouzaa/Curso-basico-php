@@ -43,7 +43,7 @@
       <div class="card-body">
         <h5 class="card-title">Adicionar fornecedor</h5>
         <p class="card-text">Opção para adicionar fornecedores.</p>
-        <a href="#" class="btn btn-primary">Cadastrar fornecedores</a>
+        <a href="adicionar_fornecedor.php" class="btn btn-primary">Cadastrar fornecedores</a>
       </div>
     </div>
   </div>
