@@ -1,62 +1,47 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Menu</title>
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-
+	<meta charset="utf-8">
+	<meta name="viewport" content="initial-scale=1.0, user-scalable=no" /> <!-- ajusta tela pra qualquer app -->
+	<title>Tela de login</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+	<style type="text/css">
+		#tamanho{
+			width: 350px;
+			-webkit-box-shadow: 10px 10px 11px 0px rgba(135,135,135,1);
+			-moz-box-shadow: 10px 10px 11px 0px rgba(135,135,135,1);
+			box-shadow: 10px 10px 11px 0px rgba(135,135,135,1);
+		}
+	</style>
 </head>
 <body>
 
-<div class="container" style="margin-top: 100px">
-	<div class="row">
+	<div class="container" id="tamanho" style="margin-top: 100px; border-radius:15px; border: 2px solid #f3f3f3">
+		<div style="padding: 10px">
+		<center>
+			<img src="imagem/cadeado.png" width="125px" height="125">
+		</center>
+		<form>
+			<div class="form-group">
+				<label>Usuário</label>
+				<input type="text" name="usuario" class="form-control" placeholder="Usuário" autocomplete="off"required>
+			</div>
+			<div class="form-group">
+				<label>Senha</label>
+				<input type="password" name="usuario" class="form-control" placeholder="Senha" autocomplete="off" required>
+			</div>
+		</form>
+		<div style="text-align: right;">
+			<button type="submit" class="btn btn -sm btn-success">Entrar</button>
+		</div>
 
-  <div class="col-sm-6">
-    <div class="card">
-      <div class="card-body">
-        <h5 class="card-title">Adicionar Produto</h5>
-        <p class="card-text">Opção para adicionar produtos em nosso estoque.</p>
-        <a href="adicionar_produto.php" class="btn btn-primary">Cadastrar produto</a>
-      </div>
-    </div>
-  </div>
-  <div class="col-sm-6">
-    <div class="card">
-      <div class="card-body">
-        <h5 class="card-title">Lista de Produtos</h5>
-        <p class="card-text">Visualizar, editar e excluir os produtos.</p>
-        <a href="listar_produtos.php" class="btn btn-primary">Produtos</a>
-      </div>
-    </div>
-  </div>
-
-   <div class="col-sm-6" style="margin-top: 20px">
-    <div class="card">
-      <div class="card-body">
-        <h5 class="card-title">Adicionar Categoria</h5>
-        <p class="card-text">Opção para adicionar categoria de produtos.</p>
-        <a href="adicionar_categoria.php" class="btn btn-primary">Cadastrar categoria</a>
-      </div>
-    </div>
-  </div>
-  <div class="col-sm-6" style="margin-top: 20px">
-    <div class="card">
-      <div class="card-body">
-        <h5 class="card-title">Adicionar fornecedor</h5>
-        <p class="card-text">Opção para adicionar fornecedores.</p>
-        <a href="adicionar_fornecedor.php" class="btn btn-primary">Cadastrar fornecedores</a>
-      </div>
-    </div>
-  </div>
-  
+	</div>
 </div>
 
-</div>
 
-<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-
-
-
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
 </body>
 </html>
