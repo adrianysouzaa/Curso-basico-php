@@ -9,8 +9,12 @@
 
 
 <div class="container" style="width: 400px; margin-top: 40px">
+	<div style="text-align: right;">
+		<a href="menu.php" role="button" class="btn btn-primary btn-sm">Voltar</a>
+
+	</div>
 	<h4>Cadastro de Usuário</h4>
-	<form>
+	<form action="_insert_usuario.php" method="post">
 		<div class="form-group">
 			<label>Nome do usuário</label>
 			<input type="text" name="nomeusuario" class="form-control" required autocomplete="off" placeholder="Nome Completo">
@@ -18,7 +22,7 @@
 		</div>
 		<div class="form-group">
 			<label>Email</label>
-			<input type="email" name="emailusuario" class="form-control" required autocomplete="off" placeholder="Seu email">
+			<input type="email" name="mailusuario" class="form-control" required autocomplete="off" placeholder="Seu email">
 			
 		</div>
 		<div class="form-group">
@@ -45,9 +49,6 @@
 	</div>
 
 	</form>
-
-
-
 	
 </div>
 
